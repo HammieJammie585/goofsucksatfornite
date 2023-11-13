@@ -3556,11 +3556,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aa65ca443fed2840be02988ed3f7e61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
+  moveSpeed: 2
   rb2d: {fileID: 1498444858}
-  dashSpeed: 10
-  dashLength: 2
-  dashCooldown: 2
+  dashSpeed: 7
+  dashLength: 0.2
+  dashCooldown: 3
 --- !u!212 &1498444856
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3621,8 +3621,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1498444854}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0154, y: 0.0854, z: 0}
-  m_LocalScale: {x: 0.9697673, y: 2.2667418, z: 1}
+  m_LocalPosition: {x: 0.11, y: 0.0854, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -3648,6 +3648,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+<<<<<<< Updated upstream
   m_Constraints: 4
 --- !u!60 &1498444859
 PolygonCollider2D:
@@ -4507,3 +4508,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c99211e92841874b8f25f96e2a271a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+=======
+  m_Constraints: 0
+>>>>>>> Stashed changes

@@ -29,7 +29,7 @@ public class PlayerMovement : MonoBehaviour
 
         moveInput.Normalize();
 
-        rb2d.velocity = moveInput * moveSpeed;
+        rb2d.velocity = moveInput * activeMoveSpeed;
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -43,7 +43,6 @@ public class PlayerMovement : MonoBehaviour
         if (dashCounter > 0)
         {
             dashCounter -= Time.deltaTime;
-
             if (dashCounter <= 0)
             {
                 activeMoveSpeed = moveSpeed;
